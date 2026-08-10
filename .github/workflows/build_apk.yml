@@ -26,7 +26,7 @@ jobs:
 
       # Tento krok automaticky dopočítá a vytvoří složku Android
       - name: Generate Android configuration
-        run: flutter create --platforms=android .
+        run: flutter create --org com.motoflow
 
       - name: Install dependencies
         run: flutter pub get
