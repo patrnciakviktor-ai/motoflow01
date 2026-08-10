@@ -24,6 +24,10 @@ jobs:
         with:
           channel: 'stable'
 
+      # Tento krok automaticky dopočítá a vytvoří složku Android
+      - name: Generate Android configuration
+        run: flutter create --platforms=android .
+
       - name: Install dependencies
         run: flutter pub get
 
